@@ -10,7 +10,7 @@ int	ft_isascii(int c)
 
 int     main (void)
 {
-        int	c = 300;
+        unsigned char	c = 300;
 
         printf("%d\n", ft_isascii(c));
         printf("%d", isascii(c));
