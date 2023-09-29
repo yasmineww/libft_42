@@ -9,7 +9,7 @@ char *ft_strnstr(const char *str, const char *to_find, size_t len)
 	j = 0;
 	while (str[i] && i < len)
 	{
-		while (str[i + j] == to_find[j] && to_find[j] != '\0')
+		while ((i + j) < len && str[i + j] == to_find[j] && to_find[j] != '\0')
 			j++;
 		if (to_find[j] == '\0')
 			return ((char *) str + i);
