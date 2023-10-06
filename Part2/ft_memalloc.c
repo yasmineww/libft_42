@@ -20,9 +20,9 @@ void	*ft_memalloc(size_t size)
 
 int	main (void)
 {
-	char	*str;
+	int	*str;
 
 	str = ft_memalloc(5);
-	printf("%s", str);
+	printf("%d", *str);
 	return (0);
 }
